@@ -1,0 +1,47 @@
+Pick which full plate is more appropriate to print:
+t-max_x-end_upgrade_plate_E3Dv5_BLTouch.stl
+t-max_x-end_upgrade_plate_E3Dv6_BLTouch.stl
+t-max_x-end_upgrade_plate_E3Dv6_Induction.stl
+
+The E3Dv6-sized cooling_fan was taken from the source at 
+https://github.com/paenian/i3_parts/tree/master/bg9, and the BLTouch from my repo at 
+https://github.com/twstdpear/i3_parts/tree/master/BLTouch
+
+There is no E3Dv5+Induction plate. The E3Dv5 is ~8mm taller than the v6.  In theory, the 
+regular induction mount for the E3Dv6 should work, just with more of the induction sensor
+shifed down below the mount.  I no longer use one, so I don't have a way to test.  Print
+the E3Dv5_BLTouch plate, print the induction mount separately and give it a whirl.  Make sure
+you read about the sensor and required voltage divider in the instructions here: 
+http://www.nova-labs.org/wiki/novai3
+
+Parts list:
+----------
+(1) MK8 Extruder Drive Gear 5mm Bore for 1.75mm Filament 3D Printer 
+https://smile.amazon.com/dp/B00T3XLFXG
+
+(2) PSFU8-380 Precision Linear Shaft (380mm)
+https://us.misumi-ec.com/vona2/detail/110302634310/?HissuCode=PSFU8-%5B20-800%2F1%5D&PNSearch=PSFU8-380&CategorySpec=00000028943%3A%3A380
+
+(2) PSFU8-420 Precision Linear Shaft (420mm)
+https://us.misumi-ec.com/vona2/detail/110302634310/?HissuCode=PSFU8-%5B20-800%2F1%5D&PNSearch=PSFU8-420&CategorySpec=00000028943%3A%3A420
+
+(12) LMU8 Linear Bearings
+https://us.misumi-ec.com/vona2/detail/110300026540/?HissuCode=LMU8
+
+(17) m3x10mm screw, button head (cap heads should be OK, too)
+(7) m3x20mm screw, button head (cap heads should be OK, too)
+(1) 6/32" x 3/4" screw, button head
+(2) M5 x 14mm screw, button head (cap heads should be OK, too)
+(1) M5 locknut
+(1) M5 nut
+(10) M3 nuts
+(4) M3 locknuts
+(1) 6/32 Square nut
+(1) 605rs bearing
+(1) 625RS bearing
+(10-12) 4" zip ties (extras are good)
+
+Induction sensor (http://amazon.com/dp/B00542U3M4) or BLTouch (https://www.amazon.com/dp/B01FFV2TOS)
+
+RAMPS fan control daughter board:
+https://smile.amazon.com/gp/product/B00GHE3456
