@@ -1,18 +1,24 @@
+Read the Nova Labs i3 Instructions: http://www.nova-labs.org/wiki/novai3
+Specifically
+  Motors and Rods - http://www.nova-labs.org/wiki/novai3/motors_and_rods
+  Extruder - http://www.nova-labs.org/wiki/novai3/electronics/extruder
+  Z-Axis Endstop - http://www.nova-labs.org/wiki/novai3/z_axis_endstop
+  There may be other X-axis/Extruder bits in the other sections as well.
+
 Pick which full plate is more appropriate to print:
-t-max_x-end_upgrade_plate_E3Dv5_BLTouch.stl
-t-max_x-end_upgrade_plate_E3Dv6_BLTouch.stl
-t-max_x-end_upgrade_plate_E3Dv6_Induction.stl
+  t-max_x-end_upgrade_plate_E3Dv5_BLTouch.stl
+  t-max_x-end_upgrade_plate_E3Dv6_BLTouch.stl
+  t-max_x-end_upgrade_plate_E3Dv6_Induction.stl
 
 The E3Dv6-sized cooling_fan was taken from the source at 
-https://github.com/paenian/i3_parts/tree/master/bg9, and the BLTouch from my repo at 
-https://github.com/twstdpear/i3_parts/tree/master/BLTouch
+  https://github.com/paenian/i3_parts/tree/master/bg9, and the BLTouch from my repo at 
+  https://github.com/twstdpear/i3_parts/tree/master/BLTouch
 
 There is no E3Dv5+Induction plate. The E3Dv5 is ~8mm taller than the v6.  In theory, the 
 regular induction mount for the E3Dv6 should work, just with more of the induction sensor
 shifed down below the mount.  I no longer use one, so I don't have a way to test.  Print
 the E3Dv5_BLTouch plate, print the induction mount separately and give it a whirl.  Make sure
-you read about the sensor and required voltage divider in the instructions here: 
-http://www.nova-labs.org/wiki/novai3
+you read about the sensor and required voltage divider in the Nova Labs i3 Instructions mentioned above.
 
 Parts list:
 ----------
@@ -25,8 +31,10 @@ https://us.misumi-ec.com/vona2/detail/110302634310/?HissuCode=PSFU8-%5B20-800%2F
 (2) PSFU8-420 Precision Linear Shaft (420mm)
 https://us.misumi-ec.com/vona2/detail/110302634310/?HissuCode=PSFU8-%5B20-800%2F1%5D&PNSearch=PSFU8-420&CategorySpec=00000028943%3A%3A420
 
-(12) LMU8 Linear Bearings
+(8) LMU8 Linear Bearings
 https://us.misumi-ec.com/vona2/detail/110300026540/?HissuCode=LMU8
+You only technically need 7, but you'll have a spare in case you mangle one while mounting it 
+on the rod and pop the balls out.
 
 (17) m3x10mm screw, button head (cap heads should be OK, too)
 (7) m3x20mm screw, button head (cap heads should be OK, too)
@@ -37,11 +45,14 @@ https://us.misumi-ec.com/vona2/detail/110300026540/?HissuCode=LMU8
 (10) M3 nuts
 (4) M3 locknuts
 (1) 6/32 Square nut
-(1) 605rs bearing
-(1) 625RS bearing
+(1) 605rs bearing (X-axis idler); or 5mm bore 20 tooth idler pulley (https://smile.amazon.com/dp/B01BTTERJ0)
+(1) 625RS bearing (extruder idler)
 (10-12) 4" zip ties (extras are good)
 
-Induction sensor (http://amazon.com/dp/B00542U3M4) or BLTouch (https://www.amazon.com/dp/B01FFV2TOS)
+Capacitance sensor (http://amazon.com/dp/B00542U3M4) or BLTouch (https://www.amazon.com/dp/B01FFV2TOS)
 
 RAMPS fan control daughter board:
 https://smile.amazon.com/gp/product/B00GHE3456
+
+Marlin Firmware RC8 or newer:
+https://github.com/MarlinFirmware/Marlin/tree/1.1.0-RC8
