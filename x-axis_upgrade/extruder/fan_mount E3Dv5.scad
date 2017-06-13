@@ -11,11 +11,11 @@ wall=2;
 slop=.2;
 
 fan_hole = (40-wall-wall)/2;
-mount_drop = 10;
+mount_drop = 18;
 fan_z = fan_hole+wall;
 
-//fan_mount();
-bowden_fan();
+fan_mount();
+//bowden_fan();
 
 %cylinder(r=hot_rad, h=20, center=true);
 %translate([-23,0,0]) cylinder(r=hot_rad, h=20, center=true);
